@@ -3,3 +3,17 @@ um teste qualquer nesse arquivo.
 vai dar tudo certo
 
 w.s.w
+
+#iniciando 
+ssh-keygen -t rsa -f '/c/Users/wende/.ssh/github' -C 'wender_jhp@hotmail.com'
+eval '$(ssh-agent -s)'
+ssh-add /c/Users/wende/.ssh/github
+
+# iniciando o git
+git init
+git config --global user.name 'Wender Helton'
+git config --global user.email 'wender_jhp@hotmail.com'
+git remote add origin git@github.com:wh093/temp-repo.git
+git add .
+git commit -m 'Initial'
+git push origin master
