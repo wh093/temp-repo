@@ -17,3 +17,6 @@ git remote add origin git@github.com:wh093/temp-repo.git
 git add .
 git commit -m 'Initial'
 git push origin master
+
+# mostrar comites
+git log --oneline
